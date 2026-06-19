@@ -25,6 +25,88 @@ documentation and screenshots.
 
 ---
 
+## Screenshots
+
+> All screenshots taken from this demo project running locally
+> with django-nocturne installed from PyPI.
+
+### 🏠 Dashboard Overview
+![Dashboard Overview](screenshots/dashboard_overview.png)
+*Real-time system overview — total logs, error rate (1H),
+and active anomalies. System Intelligence bar shows AI engine
+status and last scan time.*
+
+### 📈 Error Rate & Service Health
+![Charts](screenshots/dashboard_charts.png)
+*Error rate per service over time (line chart) and
+per-service health scores from 0-100 (bar chart).*
+
+### 🍩 Log Distribution & Service Status
+![Log Distribution](screenshots/dashboard_log_distribution.png)
+*Log level distribution doughnut, slowest endpoints,
+and live service status board.*
+
+### ⚠️ Anomaly Detection Table
+![Anomaly Table](screenshots/dashboard_anomaly_table.png)
+*Detected anomalies with colored severity badges (MEDIUM/HIGH/CRITICAL),
+Z-scores, error counts, health scores, and resolution status.*
+
+### 🔍 Anomaly Detail Modal
+![Anomaly Modal](screenshots/anomaly_modal.png)
+*Click any anomaly row to see full details — Z-score meter with
+color zones, plain English explanation, and LLM root cause analysis
+in a terminal-style box.*
+
+### 📋 Log Explorer
+![Log Explorer](screenshots/log_explorer.png)
+*Filterable, paginated log table with colored level badges,
+response time color coding, and search by service/level/message.*
+
+### 🔴 Stacktrace Viewer
+![Stacktrace](screenshots/log_stacktrace.png)
+*Click any ERROR/CRITICAL log row to expand — syntax-highlighted
+Python stacktrace with file paths, line numbers, and exception
+type badge. AI analysis button on the right.*
+
+### 🤖 AI Log Analysis
+![AI Analysis](screenshots/log_ai_analysis.png)
+*Per-log AI root cause analysis powered by your chosen LLM backend.
+Shows root cause, immediate fix, and prevention — cached after
+first analysis.*
+
+### 🔔 Webhook Activity
+![Webhook Activity](screenshots/webhook_activity.png)
+*Live webhook delivery feed showing alerts fired when anomaly
+thresholds were breached. Includes delivery status and payload.*
+
+### 📉 Health Trends
+![Health Trends](screenshots/health_trends.png)
+*Service health trend cards showing direction of change —
+degrading ↓, stable →, improving ↑ — with score comparison
+against previous window.*
+
+### ⏱️ Timeframe Filter
+![Timeframe Filter](screenshots/timeframe_filter.png)
+*Global timeframe filter (15M to 7D) — one click updates all
+charts, tables, and stat cards simultaneously.*
+
+### 🛡️ Django Admin Dashboard
+![Admin Dashboard](screenshots/admin_dashboard.png)
+*Full observability dashboard embedded inside Django Admin.
+Accessible to superusers or users with view_nocturne permission.*
+
+### 📊 Django Admin Anomaly List
+![Admin Anomaly List](screenshots/admin_anomaly_list.png)
+*Django Admin anomaly list view with filters, search,
+and bulk actions.*
+
+### 🌐 REST API
+![API Health](screenshots/api_health.png)
+*DRF browsable API — all 12 endpoints available at
+/nocturne/api/ with authentication.*
+
+---
+
 ## Services in the demo
 
 | Service | Description |
